@@ -1,5 +1,5 @@
 <br/>
-<h1 align="center"> Acamp Steps 2025 - Backoffice</h1>
+<h1 align="center"> Acamp Metanoia 2026 - Backoffice</h1>
 
 <p align="center">Este projeto é um Progressive Web Aplication (PWA) construído utilizando essencialmente HTML5, CSS3, Bootstrap e JavaScript. O objetivo principal é permitir que a equipe de frente de trabalho do evento consiga gerenciar inscrições, realizar check-in e check-out dos acampantes, bem como também visualizar os medicamentos/alergias utilizados por cada acampante. O grande diferencial deste projeto é a sua simplicidade, rapidez e portabilidade!
 Esse aplicativo é ideal para permitir que o time de gestão do evento consiga visualizar e registrar informações de cada acampante, proporcionando uma experiência informativa e interativa para os usuários da aplicação.</p>
@@ -10,7 +10,7 @@ Esse aplicativo é ideal para permitir que o time de gestão do evento consiga v
   <img src="https://github.com/user-attachments/assets/4c5b95d0-3831-407a-9aed-34d757e3ca5e" alt="Logo" width="30%">
 </p>
 
-> Este projeto contempla um PWA (Progressive Web Apliction) de Backoffice para a equipe de gestão do Acampamento 2025.
+> Este projeto contempla um PWA (Progressive Web Apliction) de Backoffice para a equipe de gestão do Acampamento 2026.
 
 ## 🔎 Tecnologias
 
@@ -37,7 +37,7 @@ O aplicativo contém três módulos principais:
 - [X] Consultar pagamentos filtrando por Igreja;
 - [X] Consultar inscritos por Igreja;
 
-## 📫 Contribuindo para Acamp Steps 2025 - Backoffice
+## 📫 Contribuindo para Acamp Metanoia 2026 - Backoffice
 
 Para contribuir com o projeto, siga estas etapas:
 
