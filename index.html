@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="src/pages/stylesheet/default-content.css" type="text/css">
     <link rel="stylesheet" href="src/components/bottom-menu/bottom-menu.css" type="text/css">
     <link rel="stylesheet" href="src/components/header/header.css" type="text/css">
+    <link rel="stylesheet" href="src/components/field/field.css" type="text/css">
     <link rel="stylesheet" href="src/utils/color.css" type="text/css">
 
     <link rel="stylesheet" href="src/components/main-image-page/main-image-page.css">
@@ -38,7 +39,7 @@
 
 <body>
     <header id="header">
-        <img class="img-fluid" src="public/gfq/gfq-logo-branco.svg" alt="">
+       <img class="img-fluid" src="public/gfq/gfq-logo-branco.svg" alt="">
     </header>
 
     <section id="mainContainer" class="container">
@@ -56,6 +57,40 @@
                     Aqui você poderá gerenciar os dados dos participantes do Acampamento 2026.
                 </p>
 
+                <!-- API KEY -->
+                <div class="mt-4 px-4">
+                    <label for="apiKeyInput" class="form-label"><strong>Credencial</strong></label>
+
+                    <div class="row g-2 align-items-center">
+                    <div class="col-9">
+                        <div class="d-flex align-items-center">
+                        <input
+                            id="apiKeyInput"
+                            type="password"
+                            class="form-control field"
+                            placeholder="Insira a chave de acesso"
+                            autocomplete="off"
+                            spellcheck="false"
+                        />
+
+                        <button
+                            id="toggleApiKeyBtn"
+                            class="btn btn-outline-light border-0"
+                            type="button"
+                            aria-label="Mostrar/ocultar chave"
+                            title="Mostrar/ocultar"
+                        >
+                            <i id="toggleApiKeyIcon" class="fa-solid fa-eye"></i>
+                        </button>
+                        </div>
+                    </div>
+
+                    <div class="col-3 d-flex justify-content-end">
+                        <button id="saveApiKeyBtn" class="btn button-primary w-100" type="button">Salvar</button>
+                    </div>
+                    </div>
+                    <small id="apiKeyStatus" class="d-block"></small>
+                </div>
             </section>
         </div>
     </section>
@@ -82,6 +117,7 @@
         </div>
     </nav>
 
+    <script src="src/pages/handler/localStorage.js"></script>
     <script src="src/pages/render-route-pages/routes.js"></script>
 </body>
 
