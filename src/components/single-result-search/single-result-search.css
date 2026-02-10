@@ -1,0 +1,39 @@
+#simplifyResultSearch, #singleResultSearch {
+    text-align: start;
+    vertical-align: middle;
+    margin: 20px 0;
+}
+
+.field-result-search {
+    display: block;
+    width: 130px !important;
+}
+
+#simplifyResultSearch td, #singleResultSearch td, th{
+    font-size: 16px;
+}
+
+/*Odd rows of table*/
+#simplifyResultSearch tr:nth-child(odd), #singleResultSearch tr:nth-child(odd) {
+    background-color: rgba(45, 55, 72, 0.419);
+}
+
+/*Even table rows*/
+#simplifyResultSearch tr:nth-child(even), #singleResultSearch tr:nth-child(even) {
+    background-color: #2e619818;
+}
+
+#simplifyResultSearch a, #singleResultSearch a {
+    font-weight: bold;
+    color: #1b1b1b;
+}
+
+/*Class applied in the payment field*/
+.payment {
+    display: inline-block;
+    background: #1b1b1b !important;
+    color: var(--white) !important;
+    border-radius: 10px;
+    margin: 5px;
+    font-weight: bold;
+}

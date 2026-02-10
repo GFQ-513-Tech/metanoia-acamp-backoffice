@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--  -->
+    <meta property="og:title" content="App Backoffice Acampamento 2025" />
+    <meta property="og:description" content="App Backoffice Acampamento 2025 - Igreja do Evangelho Quadrangular Região 513" />
+
+    <!-- Bootstrap CSS & JS-->
+    <link rel="stylesheet" href="src/assets/bootstrap/css/bootstrap.min.css">
+    <script src="src/assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Imports Style CSS -->
+    <link rel="stylesheet" href="src/pages/stylesheet/default-content.css" type="text/css">
+    <link rel="stylesheet" href="src/components/bottom-menu/bottom-menu.css" type="text/css">
+    <link rel="stylesheet" href="src/components/header/header.css" type="text/css">
+    <link rel="stylesheet" href="src/utils/color.css" type="text/css">
+
+    <link rel="stylesheet" href="src/components/main-image-page/main-image-page.css">
+    <link rel="stylesheet" href="src/components/buttons/buttons.css" type="text/css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="src/assets/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="src/assets/font-awesome/css/fontawesome.min.css">
+
+    <!-- Shortcut Icon -->
+    <link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon">
+
+    <!-- Manifest PWA -->
+    <link rel="manifest" href="src/pwa/manifest.webmanifest">
+
+    <title>APP Backoffice Acamp2025</title>
+</head>
+
+<body>
+    <header id="header">
+        <img class="img-fluid" src="public/gfq/gfq-logo-branco.svg" alt="">
+    </header>
+
+    <section id="mainContainer" class="container">
+        <div class="row">
+            <section id="pageContent">
+                <div id="mainImagePage" class="container">
+                    <img class="img-fluid" src="public/letsgo/letsgo-logo.svg" alt="">
+                </div>
+
+                <h3 class="mt-4 mb-3">
+                    Bem vindo(a) ao <strong>Backoffice</strong> do Acampamento 2025!
+                </h3>
+
+                <p class="mt-4 mb-3">
+                    Aqui você poderá gerenciar os dados dos participantes do Acampamento 2025.
+                </p>
+
+            </section>
+        </div>
+    </section>
+
+    <nav id="bottomMenu" class="navbar">
+        <div class="section-buttons">
+            <a class="item-menu navbar-brand" href="src/pages/checkin/checkin.html" onclick="setModuleSelector('checkin')">
+                <i class="fa-sharp fa-solid fa-qrcode">
+                    <span>Check-in</span>
+                </i>
+            </a>
+
+            <a class="item-menu navbar-brand" href="src/pages/camper/camper.html" onclick="setModuleSelector('camper')">
+                <i class="fa-solid fa-circle-user">
+                    <span>Dados</span>
+                </i>
+            </a>
+
+            <a class="item-menu navbar-brand" href="src/pages/church/church.html" onclick="setModuleSelector('church')">
+                <i class="fa-solid fa-church">
+                    <span>Igreja</span>
+                </i>
+            </a>
+        </div>
+    </nav>
+
+    <script src="src/pages/render-route-pages/routes.js"></script>
+</body>
+
+</html>

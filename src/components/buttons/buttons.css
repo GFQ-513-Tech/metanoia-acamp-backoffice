@@ -1,0 +1,97 @@
+:root {
+    --buttons-widht: 80%;
+    --buttons-height: 40px;
+}
+
+.button-primary {
+    width: var(--buttons-widht);
+    height: var(--buttons-height);
+    background: var(--button-primary-color);
+    color: var(--white);
+    border-radius: 50px;
+    text-transform: uppercase;
+    justify-self: center;
+}
+
+.button-success {
+    width: var(--buttons-widht);
+    height: var(--buttons-height);
+    background: #45484d !important;
+    color: var(--white) !important;
+    border-radius: 50px;
+    text-transform: uppercase;
+    justify-self: center;
+}
+
+.button-primary:hover, .button-primary:focus, .button-primary:active, .button-secondary:hover, .button-secondary:focus, .button-secondary:active, .back-button:hover, .back-button:focus, .back-button:active  {
+    background: var(--white) !important;
+    color: var(--button-primary-color) !important;
+    font-weight: bold;
+}
+
+.button-secondary {
+    width: var(--buttons-widht);
+    height: var(--buttons-height);
+    background: var(--tertiary-color);
+    color: var(--white);
+    border-radius: 50px;
+    text-transform: uppercase;
+    justify-self: center;
+}
+
+.btn span {
+    text-transform: uppercase;
+    font-weight: semi-bold;
+    font-size: 14.5px;
+}
+
+.back-button {
+    position: fixed;
+    top: calc(var(--header-size) + 20px);
+    left: 20px;
+    width: 50px;
+    background: var(--tertiary-color);
+    color: var(--white);
+    border-radius: 10px;
+    z-index: 5;
+}
+
+.back-button i {
+   font-size: 30px;
+}
+
+
+/*Extre small devices (mode landscape)*/
+@media (min-height: 0px) and (max-height: 600px) {
+    .back-button {
+        display: none;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .back-button {
+        left: 25%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .back-button {
+        left: 27%;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .back-button {
+        left: 32%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .back-button {
+        left: 32%;
+    }
+}

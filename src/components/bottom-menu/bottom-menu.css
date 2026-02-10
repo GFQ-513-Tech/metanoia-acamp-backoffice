@@ -1,0 +1,100 @@
+:root {
+    --bottomMenu-height: 85px;
+    --item-menu-height: 100%;
+    --item-menu-icons-size: 30px;
+}
+
+*, a {
+    margin: 0px;
+    padding: 0px;
+}
+
+#bottomMenu {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    max-width: var(--mainContainer-extra-small);
+    height: var(--bottomMenu-height);
+    background: var(--primary-color);
+    padding: 8px;
+}
+
+.section-buttons {
+    width: 70%;
+    height: var(--item-menu-height);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-menu {
+    width: 80px;
+    height: var(--item-menu-height);
+    color: var(--white);
+    margin: 0px;
+}
+
+.item-menu:hover {
+    color: var(--secondary-color);
+}
+
+/*Class activated when clicked*/
+.actived {
+    background: var(--secondary-color);
+    border-radius: 10px;
+    color: #000;
+}
+
+.item-menu i span {
+    display: block;
+    margin-top: 5px;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.item-menu i {
+    font-size: var(--item-menu-icons-size);
+}
+
+/*Extre small devices (mode landscape)*/
+@media (min-height: 0px) and (max-height: 600px) {
+    #bottomMenu {
+        display: none;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #bottomMenu {
+        width: var(--mainContainer-small);
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #bottomMenu {
+        width: var(--mainContainer-medium);
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #bottomMenu {
+        width: var(--mainContainer-large);
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    #bottomMenu {
+        width: var(--mainContainer-extra-large);
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+}

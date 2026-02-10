@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--  -->
+    <meta property="og:title" content="App Backoffice Acampamento 2023" />
+    <meta property="og:description"
+        content="App Backoffice Acampamento 2023 - Igreja do Evangelho Quadrangular Região 513" />
+
+   <!-- Bootstrap CSS & JS-->
+   <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+   <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Imports Style CSS -->
+    <link rel="stylesheet" href="../stylesheet/default-content.css" type="text/css">
+    <link rel="stylesheet" href="../../components/bottom-menu/bottom-menu.css" type="text/css">
+    <link rel="stylesheet" href="../../components/header/header.css" type="text/css">
+    <link rel="stylesheet" href="../../utils/color.css" type="text/css">
+
+    <link rel="stylesheet" href="../../components/main-image-page/main-image-page.css">
+    <link rel="stylesheet" href="../../components/buttons/buttons.css" type="text/css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="../../assets/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/font-awesome/css/fontawesome.min.css">
+
+    <!-- Shortcut Icon -->
+    <link rel="shortcut icon" href="../../../public/favicon.ico" type="image/x-icon">
+
+    <!-- Javascript File's -->
+    <script src="../render-route-pages/routes.js"></script>
+
+    <title>APP Backoffice - Dados </title>
+</head>
+
+<body>
+    <header id="header">
+        <img class="img-fluid" src="../../../public/gfq/gfq-logo-branco.svg" alt="">
+    </header>
+
+    <section id="mainContainer" class="container">
+        <div class="row">
+            <section id="pageContent">
+                <div id="mainImagePage" class="container">
+                    <img class="img-fluid" src="../../assets/images/cloud.png" alt="">
+                </div>
+
+                <p>
+                    Nesta aba você pode <strong>encontrar a ficha completa de um acampante</strong>, encontrar
+                    informações de contato, pagamento, alergias e outros.
+
+                    <br><br>
+
+                    Você pode pesquisar por nome ou por <strong>QR Code</strong>.
+                </p>
+
+                <div class="container d-grid gap-2">
+                    <button type="button" class="btn button-primary" onclick="setRoute('find-by-name-route');
+                        window.location='../application/application.html'">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Pesquisar por Nome</span>
+                    </button>
+
+                    <button type="button" class="btn button-primary" onclick="setRoute('find-by-code-route');
+                        window.location='../application/application.html'">
+                        <i class="fa-solid fa-hashtag"></i>
+                        <span>Pesquisar por código</span>
+                    </button>
+
+                    <button type="button" class="btn button-primary" onclick="setRoute('find-by-scanner-route');
+                        window.location='../application/application.html'">
+                        <i class="fa-sharp fa-solid fa-qrcode"></i>
+                        <span>Scanear QR Code</span>
+                    </button>
+                </div>
+
+            </section>
+        </div>
+
+    </section>
+
+    <nav id="bottomMenu" class="navbar">
+        <div class="section-buttons">
+            <a class="item-menu navbar-brand" href="../checkin/checkin.html" onclick="setModuleSelector('checkin')">
+                <i class="fa-sharp fa-solid fa-qrcode">
+                    <span>Check-in</span>
+                </i>
+            </a>
+
+            <a class="item-menu navbar-brand actived" href="#" onclick="setModuleSelector('camper')">
+                <i class="fa-solid fa-circle-user">
+                    <span>Dados</span>
+                </i>
+            </a>
+
+            <a class="item-menu navbar-brand" href="../church/church.html" onclick="setModuleSelector('church')">
+                <i class="fa-solid fa-church">
+                    <span>Igreja</span>
+                </i>
+            </a>
+        </div>
+    </nav>
+</body>
+
+</html>
