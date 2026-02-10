@@ -2,3 +2,7 @@
     border-radius: 10px;
     margin: 20px auto;
 }
+
+#toggleApiKeyBtn i{
+  color: #000;
+}

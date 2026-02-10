@@ -7,7 +7,6 @@ const manipulateSingleData = function (displayMethod, data) {
     camperViewTable.getElementsByClassName('name-result-search')[0].innerText = `${data.name}`;
     camperViewTable.getElementsByClassName('age-result-search')[0].innerText = getAge(data.birthDate);
     camperViewTable.getElementsByClassName('sex-result-search')[0].innerText = data.sex;
-    camperViewTable.getElementsByClassName('document-result-search')[0].innerText = data.rg;
     
     if (getAge(data.birthDate) >= 18){
         document.getElementById('rowAdultResponsibleName').classList.add('d-none');

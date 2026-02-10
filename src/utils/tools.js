@@ -1,10 +1,3 @@
-//const urlAPIServer = `https://api-acamp.gfq513.com.br/api/v1`
-const urlAPIServer = `http://localhost:4001/api/v1`;
-const userModule = `users`;
-const reportsByChurchModule = `reports/resume-by-church`;
-const registerCheckinEndpoint = `frontdesk/checkin`;
-const registerCheckoutEndpoint = `frontdesk/checkout`;
-
 const getAge = function (date) {
   const today = new Date();
   const birthDate = new Date(date);

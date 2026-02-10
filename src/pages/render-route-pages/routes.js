@@ -113,6 +113,10 @@ const nextStep = function (screen) {
             activeSection('serverError');
             break;
 
+        case 'unauthorized':
+            activeSection('unauthorized');
+            break;
+
         default:
             break;
     }

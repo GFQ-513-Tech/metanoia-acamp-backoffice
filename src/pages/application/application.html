@@ -36,11 +36,8 @@
 
     <!-- Javascript File's -->
     <script src="../../components/spinner/spinner.js"></script>
-    <script src="../../api/getAllUsers.js"></script>
-    <script src="../../api/getUser.js"></script>
-    <script src="../../api/registerCheckin.js"></script>
-    <script src="../../api/registerCheckout.js"></script>
-    <script src="../../api/getChurchCampers.js"></script>
+    <script src="../../api/metanoiaService.js"></script>
+    <script src="../../api/client.js"></script>
     <script src="../../utils/tools.js"></script>
 
     <!-- Shortcut Icon -->
@@ -51,7 +48,9 @@
 
 <body>
     <header id="header">
-        <img class="img-fluid" src="../../../public/gfq/gfq-logo-branco.svg" alt="">
+        <a href="/">
+            <img class="img-fluid" src="../../../public/gfq/gfq-logo-branco.svg" alt="">
+        </a>
     </header>
 
     <button type="button" class="btn back-button" id="backButton" onclick="backStep();">
@@ -80,7 +79,7 @@
                 </div>
 
                 <div id="codeRoute" class="d-none">
-                    <h2 class="main-title">Insira a chave do acampante</h2>
+                    <h2 class="main-title">Insira o identificador do acampante</h2>
 
                     <fieldset class="fieldset m-auto w-75">
                         <div class="form-floating">
@@ -254,16 +253,6 @@
                                     <td class="email-result-search"></td>
                                 </tr>
 
-                                <tr>
-                                    <th scope="row">
-                                        <span class="field-result-search">
-                                            <i class="fa-solid fa-id-card-clip"></i>
-                                            N° RG
-                                        </span>
-                                    </th>
-                                    <td class="document-result-search"></td>
-                                </tr>
-
                                 <tr id="rowAdultResponsibleName">
                                     <th scope="row">
                                         <span class="field-result-search">
@@ -278,7 +267,7 @@
                                     <th scope="row">
                                         <span class="field-result-search">
                                             <i class="fa-solid fa-id-card-clip"></i>
-                                            RG Responsável
+                                            CPF Responsável
                                         </span>
                                     </th>
                                     <td class="adult-result-search"></td>
@@ -444,16 +433,6 @@
                                     <td class="email-result-search"></td>
                                 </tr>
 
-                                <tr>
-                                    <th scope="row">
-                                        <span class="field-result-search">
-                                            <i class="fa-solid fa-id-card-clip"></i>
-                                            N° RG
-                                        </span>
-                                    </th>
-                                    <td class="document-result-search"></td>
-                                </tr>
-
                                 <tr id="rowAdultResponsibleName2">
                                     <th scope="row">
                                         <span class="field-result-search">
@@ -468,7 +447,7 @@
                                     <th scope="row">
                                         <span class="field-result-search">
                                             <i class="fa-solid fa-id-card-clip"></i>
-                                            RG Responsável
+                                            CPF Responsável
                                         </span>
                                     </th>
                                     <td class="adult-result-search"></td>
@@ -644,6 +623,19 @@
                     </div>
 
                     <p><strong>Erro no servidor!</strong> Contate o João Lucas.</p>
+
+                    <button type="button" class="btn button-secondary" onclick="renderModule()">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span>Voltar</span>
+                    </button>
+                </div>
+
+                <div id="unauthorized" class="d-none">
+                    <div id="mainImagePage" class="container">
+                        <img class="img-fluid" src="../../assets/images/server-error.png" alt="">
+                    </div>
+
+                    <p><strong>Não autorizado!</strong> Contate o João Lucas.</p>
 
                     <button type="button" class="btn button-secondary" onclick="renderModule()">
                         <i class="fa-solid fa-arrow-left"></i>
